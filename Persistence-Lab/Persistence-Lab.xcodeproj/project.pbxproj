@@ -3,27 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		554EF41323D7C27700AB25DC /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554EF41223D7C27700AB25DC /* FileManager+Extension.swift */; };
+		554EF41523D7CD3900AB25DC /* PersistanceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554EF41423D7CD3900AB25DC /* PersistanceHelper.swift */; };
 		559CE70823D7A6A900EBC610 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559CE70723D7A6A900EBC610 /* AppDelegate.swift */; };
 		559CE70A23D7A6A900EBC610 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559CE70923D7A6A900EBC610 /* SceneDelegate.swift */; };
-		559CE70C23D7A6A900EBC610 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559CE70B23D7A6A900EBC610 /* ViewController.swift */; };
+		559CE70C23D7A6A900EBC610 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559CE70B23D7A6A900EBC610 /* mainViewController.swift */; };
 		559CE70F23D7A6A900EBC610 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559CE70D23D7A6A900EBC610 /* Main.storyboard */; };
 		559CE71123D7A6AE00EBC610 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 559CE71023D7A6AE00EBC610 /* Assets.xcassets */; };
 		559CE71423D7A6AE00EBC610 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559CE71223D7A6AE00EBC610 /* LaunchScreen.storyboard */; };
+		559CE71F23D7AAB600EBC610 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559CE71E23D7AAB600EBC610 /* DetailsViewController.swift */; };
+		559CE72123D7AACD00EBC610 /* FavsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559CE72023D7AACD00EBC610 /* FavsViewController.swift */; };
+		559CE72423D7AF2D00EBC610 /* PhotosAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559CE72323D7AF2D00EBC610 /* PhotosAPIClient.swift */; };
+		559CE72723D7B05300EBC610 /* photosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559CE72623D7B05300EBC610 /* photosModel.swift */; };
+		559CE72A23D7B55E00EBC610 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 559CE72923D7B55E00EBC610 /* ImageKit */; };
+		559CE72C23D7B59500EBC610 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559CE72B23D7B59500EBC610 /* AppError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		554EF41223D7C27700AB25DC /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
+		554EF41423D7CD3900AB25DC /* PersistanceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceHelper.swift; sourceTree = "<group>"; };
 		559CE70423D7A6A900EBC610 /* Persistence-Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Persistence-Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		559CE70723D7A6A900EBC610 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		559CE70923D7A6A900EBC610 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		559CE70B23D7A6A900EBC610 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		559CE70B23D7A6A900EBC610 /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		559CE70E23D7A6A900EBC610 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		559CE71023D7A6AE00EBC610 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		559CE71323D7A6AE00EBC610 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		559CE71523D7A6AE00EBC610 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		559CE71E23D7AAB600EBC610 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		559CE72023D7AACD00EBC610 /* FavsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavsViewController.swift; sourceTree = "<group>"; };
+		559CE72323D7AF2D00EBC610 /* PhotosAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAPIClient.swift; sourceTree = "<group>"; };
+		559CE72623D7B05300EBC610 /* photosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photosModel.swift; sourceTree = "<group>"; };
+		559CE72B23D7B59500EBC610 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +46,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				559CE72A23D7B55E00EBC610 /* ImageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		554EF41123D7C25E00AB25DC /* Data Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				554EF41223D7C27700AB25DC /* FileManager+Extension.swift */,
+				554EF41423D7CD3900AB25DC /* PersistanceHelper.swift */,
+			);
+			path = "Data Persistance";
+			sourceTree = "<group>";
+		};
 		559CE6FB23D7A6A900EBC610 = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +81,11 @@
 		559CE70623D7A6A900EBC610 /* Persistence-Lab */ = {
 			isa = PBXGroup;
 			children = (
+				554EF41123D7C25E00AB25DC /* Data Persistance */,
+				559CE72523D7B04200EBC610 /* models */,
+				559CE72223D7AEEB00EBC610 /* helper functions */,
+				559CE71D23D7AA8100EBC610 /* controllers */,
 				559CE70D23D7A6A900EBC610 /* Main.storyboard */,
-				559CE70B23D7A6A900EBC610 /* ViewController.swift */,
 				559CE71B23D7A6B700EBC610 /* supporting files */,
 				559CE71523D7A6AE00EBC610 /* Info.plist */,
 			);
@@ -73,6 +101,33 @@
 				559CE70923D7A6A900EBC610 /* SceneDelegate.swift */,
 			);
 			path = "supporting files";
+			sourceTree = "<group>";
+		};
+		559CE71D23D7AA8100EBC610 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				559CE70B23D7A6A900EBC610 /* mainViewController.swift */,
+				559CE71E23D7AAB600EBC610 /* DetailsViewController.swift */,
+				559CE72023D7AACD00EBC610 /* FavsViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		559CE72223D7AEEB00EBC610 /* helper functions */ = {
+			isa = PBXGroup;
+			children = (
+				559CE72323D7AF2D00EBC610 /* PhotosAPIClient.swift */,
+			);
+			path = "helper functions";
+			sourceTree = "<group>";
+		};
+		559CE72523D7B04200EBC610 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				559CE72623D7B05300EBC610 /* photosModel.swift */,
+				559CE72B23D7B59500EBC610 /* AppError.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +146,9 @@
 			dependencies = (
 			);
 			name = "Persistence-Lab";
+			packageProductDependencies = (
+				559CE72923D7B55E00EBC610 /* ImageKit */,
+			);
 			productName = "Persistence-Lab";
 			productReference = 559CE70423D7A6A900EBC610 /* Persistence-Lab.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +177,9 @@
 				Base,
 			);
 			mainGroup = 559CE6FB23D7A6A900EBC610;
+			packageReferences = (
+				559CE72823D7B55E00EBC610 /* XCRemoteSwiftPackageReference "ImageKit" */,
+			);
 			productRefGroup = 559CE70523D7A6A900EBC610 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,9 +207,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				559CE70C23D7A6A900EBC610 /* ViewController.swift in Sources */,
+				559CE70C23D7A6A900EBC610 /* mainViewController.swift in Sources */,
 				559CE70823D7A6A900EBC610 /* AppDelegate.swift in Sources */,
+				559CE72723D7B05300EBC610 /* photosModel.swift in Sources */,
+				559CE72423D7AF2D00EBC610 /* PhotosAPIClient.swift in Sources */,
+				559CE72C23D7B59500EBC610 /* AppError.swift in Sources */,
+				559CE72123D7AACD00EBC610 /* FavsViewController.swift in Sources */,
 				559CE70A23D7A6A900EBC610 /* SceneDelegate.swift in Sources */,
+				559CE71F23D7AAB600EBC610 /* DetailsViewController.swift in Sources */,
+				554EF41323D7C27700AB25DC /* FileManager+Extension.swift in Sources */,
+				554EF41523D7CD3900AB25DC /* PersistanceHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +414,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		559CE72823D7B55E00EBC610 /* XCRemoteSwiftPackageReference "ImageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpaul/ImageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		559CE72923D7B55E00EBC610 /* ImageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 559CE72823D7B55E00EBC610 /* XCRemoteSwiftPackageReference "ImageKit" */;
+			productName = ImageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 559CE6FC23D7A6A900EBC610 /* Project object */;
 }

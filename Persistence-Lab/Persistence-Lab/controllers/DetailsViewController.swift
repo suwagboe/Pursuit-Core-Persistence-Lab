@@ -19,7 +19,7 @@ class DetailsViewController: UIViewController {
     //
       @IBOutlet weak var favButton: UIButton!
     
-    private var selectedPhoto: AllPhotos!
+    public var selectedPhoto: AllPhotos!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,12 +53,23 @@ class DetailsViewController: UIViewController {
         })
         
     }
+    
+    
+    @IBAction func addToFavs(_ sender: UIButton) {
+        makingAFav()
+    }
+    
 
-    func addFav(){
+    func makingAFav(){
         // this function adds the favorites
-        selectedPhoto.fav = "Shaniya"
-        
-        
+        if selectedPhoto.fav == nil {
+            selectedPhoto.fav = "Shaniya"
+        } else if selectedPhoto.fav == "Shaniya" {
+            // I hope that this will take away the fav..
+            selectedPhoto.fav = nil
+        }
+       // selectedPhoto.fav = "Shaniya"
+        print(selectedPhoto.fav)
         
     }
     

@@ -33,6 +33,16 @@ class mainViewController: UIViewController {
         searchAndGetPhotos(searchQuery: "dog")
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailsVC = segue.destination as? DetailsViewController, let indexPath = collectionView.indexPathsForSelectedItems else {
+            fatalError("could't segue please check again")
+            return
+        }
+        let selected = allPhotos[indexPath.first!.row]
+        // why does it need to be first
+        detailsVC.selectedPhoto = selected
+    }
 
     func searchAndGetPhotos(searchQuery: String){
         

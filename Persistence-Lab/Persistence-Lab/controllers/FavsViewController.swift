@@ -25,11 +25,10 @@ class FavsViewController: UIViewController {
     }
 
     private func retrieveFavs() {
-        
         do{
-            favPhoto = try dataPersistance.
+            favPhoto = try dataPersistance.loadFavorites()
         } catch{
-            
+            print("it aint work because: \(error)")
         }
         
     }

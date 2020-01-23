@@ -89,8 +89,8 @@
 		559CE70623D7A6A900EBC610 /* Persistence-Lab */ = {
 			isa = PBXGroup;
 			children = (
-				55BCD03C23DA35C0005BA92F /* Secrets */,
 				559CE70D23D7A6A900EBC610 /* Main.storyboard */,
+				55BCD03C23DA35C0005BA92F /* Secrets */,
 				554EF41123D7C25E00AB25DC /* Data Persistance */,
 				559CE72523D7B04200EBC610 /* models */,
 				559CE72223D7AEEB00EBC610 /* helper functions */,

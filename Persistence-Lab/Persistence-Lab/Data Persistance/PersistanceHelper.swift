@@ -58,7 +58,7 @@ class PersistenceHelper {
         
     }
     
-    private func loadFavorites() throws -> [AllPhotos] {
+    public func loadFavorites() throws -> [AllPhotos] {
         let url = FileManager.pathToDocumentsDirectory(with: filename)
 
         // url comes from the static let from above

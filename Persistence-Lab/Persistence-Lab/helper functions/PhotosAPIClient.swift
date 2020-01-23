@@ -14,7 +14,7 @@ class PhotosAPIClient {
     // need to remeber to make the proper function static in ordet to access them correctly 
     static func getPhotos(searchQuery: String, completion: @escaping (Result <[AllPhotos], AppError>) -> () ) {
         
-        let photosUrlEndpoint =  ""
+        let photosUrlEndpoint = SecretsKey.key
         
         guard let url = URL(string: photosUrlEndpoint) else {
             completion(.failure(.badURL(photosUrlEndpoint)))

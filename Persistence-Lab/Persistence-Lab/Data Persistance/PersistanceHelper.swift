@@ -18,17 +18,21 @@ enum DataPersistenceError: Error {
 
 class PersistenceHelper {
     
-    private static var photosArray = [AllPhotos]()
+    private var photosArray = [AllPhotos]()
         // want to save the favorite photos with the persistence helper
     
-  static let url = FileManager.pathToDocumentsDirectory(with: filename)
+    private var filename: String
+            //= "Favs.plist"
+    init(filename:String){
+        self.filename = filename
+    }
+    
 
-    
-    static let filename = "FavPhotos.plist"
-    
-    static func saveRegardless() throws{
+    private func saveRegardless() throws{
         do {
             //
+             let url = FileManager.pathToDocumentsDirectory(with: filename)
+
             let data = try PropertyListEncoder().encode(filename)
             // property list encode is to convert the data
             try data.write(to: url, options: .atomic)
@@ -37,7 +41,9 @@ class PersistenceHelper {
         }
     }
     
-    static func saveToFavs(photo: AllPhotos) throws {
+    public func saveToFavs(photo: AllPhotos) throws {
+      //  let url = FileManager.pathToDocumentsDirectory(with: filename)
+
         // it has the parameter of a photo because its what needs to be passed in order for it to save
         //
         // need to create(save) something in order to save something.. so you need to create the saved have have it somewhere before you actually save the item to the folders.. cant save something that isnt there.
@@ -52,7 +58,9 @@ class PersistenceHelper {
         
     }
     
-    static func loadFavorites() throws -> [AllPhotos] {
+    private func loadFavorites() throws -> [AllPhotos] {
+        let url = FileManager.pathToDocumentsDirectory(with: filename)
+
         // url comes from the static let from above
         let path = url.path
 

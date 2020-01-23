@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class FavsViewController: UIViewController {
 
     @IBOutlet weak var favscollectionView: UICollectionView!
 
-     
+    private let dataPersistance = PersistenceHelper(filename: "favs.plist")
     
     public var favPhoto = [AllPhotos]()
     
@@ -20,8 +21,19 @@ class FavsViewController: UIViewController {
         super.viewDidLoad()
     //  favscollectionView.delegate = self
         //favscollectionView.dataSource = self
+        retrieveFavs()
     }
 
+    private func retrieveFavs() {
+        
+        do{
+            favPhoto = try dataPersistance.
+        } catch{
+            
+        }
+        
+    }
+    
 
 }
 

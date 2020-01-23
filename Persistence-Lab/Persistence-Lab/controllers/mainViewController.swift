@@ -30,7 +30,7 @@ class mainViewController: UIViewController {
         searchBar.delegate = self
         collectionView.delegate = self
         collectionView.dataSource = self
-        searchAndGetPhotos(searchQuery: "sky")
+        searchAndGetPhotos(searchQuery: "dog")
         
     }
 
@@ -56,12 +56,20 @@ class mainViewController: UIViewController {
 
 extension mainViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String){
+// it doenst go in here because this will be called everytime they type
+//        searchBar.resignFirstResponder()
+
+    }
+    func searchBarButtonClicked(_ searchBar: UISearchBar){
         guard let searchText = searchBar.text else {
             print("we are missing text")
             return // we are returning because we are inside of a guard let statement
-        }}
-    func searchBarButtonClicked(_ searchBar: UISearchBar){
+        }
+        // need the below in order for the view to change whemn they type in more stuff
+        searchAndGetPhotos(searchQuery: searchText)
+        
         searchBar.resignFirstResponder()
+
     }
 }
 

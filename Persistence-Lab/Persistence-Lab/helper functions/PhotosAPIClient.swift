@@ -11,9 +11,10 @@ import NetworkHelper
 
 class PhotosAPIClient {
     
-    func getPhotos(with string: String, completion: @escaping (Result <[AllPhotos], AppError>) -> () ) {
+    // need to remeber to make the proper function static in ordet to access them correctly 
+    static func getPhotos(searchQuery: String, completion: @escaping (Result <[AllPhotos], AppError>) -> () ) {
         
-        let photosUrlEndpoint = ""
+        let photosUrlEndpoint =  ""
         
         guard let url = URL(string: photosUrlEndpoint) else {
             completion(.failure(.badURL(photosUrlEndpoint)))
@@ -27,12 +28,14 @@ class PhotosAPIClient {
             switch result {
                 case .failure(let error):
                     completion(.failure(.networkClientError(error)))
+                
                 case .success(let data):
                     do{
                         // without the do catch the data is not properly captured
-                        let photosData = try JSONDecoder().decode([Photos].self, from: data)
+                        // need to access the top layer as it is before going to the bottom
+                        let photosData = try JSONDecoder().decode(Photos.self, from: data)
                         
-                        completion(.success(photosData.first!.hits))
+                        completion(.success(photosData.hits))
 
                     } catch {
                         completion(.failure(.decodingError(error)))

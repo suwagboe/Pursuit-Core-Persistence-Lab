@@ -21,6 +21,9 @@
 		559CE72723D7B05300EBC610 /* photosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559CE72623D7B05300EBC610 /* photosModel.swift */; };
 		559CE72A23D7B55E00EBC610 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 559CE72923D7B55E00EBC610 /* ImageKit */; };
 		559CE72C23D7B59500EBC610 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559CE72B23D7B59500EBC610 /* AppError.swift */; };
+		55AE762723D8DDE000AB976B /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AE762623D8DDE000AB976B /* PhotoCell.swift */; };
+		55AE762B23D8DF0200AB976B /* UIImage extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AE762A23D8DF0200AB976B /* UIImage extension .swift */; };
+		55F876F223D8FC1200D1F6EE /* Alert+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F876F123D8FC1200D1F6EE /* Alert+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		559CE72323D7AF2D00EBC610 /* PhotosAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAPIClient.swift; sourceTree = "<group>"; };
 		559CE72623D7B05300EBC610 /* photosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photosModel.swift; sourceTree = "<group>"; };
 		559CE72B23D7B59500EBC610 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		55AE762623D8DDE000AB976B /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		55AE762A23D8DF0200AB976B /* UIImage extension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage extension .swift"; sourceTree = "<group>"; };
+		55F876F123D8FC1200D1F6EE /* Alert+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +87,11 @@
 		559CE70623D7A6A900EBC610 /* Persistence-Lab */ = {
 			isa = PBXGroup;
 			children = (
+				559CE70D23D7A6A900EBC610 /* Main.storyboard */,
 				554EF41123D7C25E00AB25DC /* Data Persistance */,
 				559CE72523D7B04200EBC610 /* models */,
 				559CE72223D7AEEB00EBC610 /* helper functions */,
 				559CE71D23D7AA8100EBC610 /* controllers */,
-				559CE70D23D7A6A900EBC610 /* Main.storyboard */,
 				559CE71B23D7A6B700EBC610 /* supporting files */,
 				559CE71523D7A6AE00EBC610 /* Info.plist */,
 			);
@@ -107,8 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				559CE70B23D7A6A900EBC610 /* mainViewController.swift */,
-				559CE71E23D7AAB600EBC610 /* DetailsViewController.swift */,
 				559CE72023D7AACD00EBC610 /* FavsViewController.swift */,
+				559CE71E23D7AAB600EBC610 /* DetailsViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -117,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				559CE72323D7AF2D00EBC610 /* PhotosAPIClient.swift */,
+				55AE762A23D8DF0200AB976B /* UIImage extension .swift */,
+				55F876F123D8FC1200D1F6EE /* Alert+Extension.swift */,
 			);
 			path = "helper functions";
 			sourceTree = "<group>";
@@ -126,6 +134,7 @@
 			children = (
 				559CE72623D7B05300EBC610 /* photosModel.swift */,
 				559CE72B23D7B59500EBC610 /* AppError.swift */,
+				55AE762623D8DDE000AB976B /* PhotoCell.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -208,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				559CE70C23D7A6A900EBC610 /* mainViewController.swift in Sources */,
+				55F876F223D8FC1200D1F6EE /* Alert+Extension.swift in Sources */,
 				559CE70823D7A6A900EBC610 /* AppDelegate.swift in Sources */,
 				559CE72723D7B05300EBC610 /* photosModel.swift in Sources */,
 				559CE72423D7AF2D00EBC610 /* PhotosAPIClient.swift in Sources */,
@@ -215,6 +225,8 @@
 				559CE72123D7AACD00EBC610 /* FavsViewController.swift in Sources */,
 				559CE70A23D7A6A900EBC610 /* SceneDelegate.swift in Sources */,
 				559CE71F23D7AAB600EBC610 /* DetailsViewController.swift in Sources */,
+				55AE762723D8DDE000AB976B /* PhotoCell.swift in Sources */,
+				55AE762B23D8DF0200AB976B /* UIImage extension .swift in Sources */,
 				554EF41323D7C27700AB25DC /* FileManager+Extension.swift in Sources */,
 				554EF41523D7CD3900AB25DC /* PersistanceHelper.swift in Sources */,
 			);

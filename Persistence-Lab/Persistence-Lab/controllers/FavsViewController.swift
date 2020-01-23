@@ -10,21 +10,53 @@ import UIKit
 
 class FavsViewController: UIViewController {
 
+    @IBOutlet weak var favscollectionView: UICollectionView!
+
+     
+    
+    public var favPhoto = [AllPhotos]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    //  favscollectionView.delegate = self
+        //favscollectionView.dataSource = self
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
+extension DetailsViewController: UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        //favPhoto.count 
+        return 0
+    }
+    
+    
+  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    // the downcast should not be with the photoCell
+    guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "favsCell", for: indexPath) as? PhotoCell else {
+        fatalError("cell doesnt work ")
+    }
+    
+    
+    return cell 
+    }
+    
+}
+
+extension DetailsViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let interItemSpacing = 10
+        let maxWidth = UIScreen.main.bounds.size.width
+        let numberOfItem: CGFloat = 3
+        let totalSpacing: CGFloat = numberOfItem * CGFloat(interItemSpacing)
+        let itemWidth = (maxWidth - totalSpacing) / numberOfItem
+        return CGSize(width: itemWidth, height: itemWidth)
+    }
+    
+    
+
+    
+}
+

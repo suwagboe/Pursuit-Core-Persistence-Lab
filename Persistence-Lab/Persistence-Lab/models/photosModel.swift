@@ -14,9 +14,9 @@ struct Photos: Codable {
 
 struct AllPhotos: Codable {
     var likes: Int
-    var vies: Int
+   // var vies: Int
     var tags: String
     var largeImageURL: String
-    
-    
+    var fav: String?
+    var userImageURL: String
 }
